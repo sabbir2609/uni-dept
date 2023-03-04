@@ -1,5 +1,3 @@
-import datetime
-
 from django.db import models
 
 
@@ -10,10 +8,10 @@ class User(models.Model):
 
     ]
 
-    name = models.CharField(max_length=255)
-    address = models.CharField(max_length=255)
-    nid = models.IntegerField(max_length=16)
-    phone = models.IntegerField(max_length=11)
+    name = models.CharField(max_length=255, blank=False)
+    address = models.CharField(max_length=255, blank=True)
+    nid = models.CharField(max_length=17, help_text="Enter Your National ID")
+    phone = models.CharField(max_length=14, help_text="eg: +8801700000000", blank=False)
     birthdate = models.DateField()
     gender = models.CharField(max_length=1, choices=GENDER_CHOICES)
 
