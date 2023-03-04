@@ -1,3 +1,9 @@
-from django.shortcuts import render
+from django.views.generic import ListView
 
-# Create your views here.
+from students.models import User
+
+
+class StudentViewSet(ListView):
+    model = User
+    template_name = "students/index.html"
+    context_object_name = "students"
