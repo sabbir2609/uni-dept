@@ -4,12 +4,12 @@ This web application is designed to manage the various departments within a univ
 
 Features:
 
-* Login/Registration: Users can create an account and log in to the system.
-* User Roles: The application has different roles for users such as faculty, staff, and administrators.
-* Department Management: Users can manage various departments within the university, including creating new departments, modifying existing departments, and deleting departments.
-* Course Management: Users can create and manage courses within a department, including adding new courses, modifying existing courses, and deleting courses.
-* Course Assignments: Users can assign faculty members to specific courses and manage the assignments of courses to the faculty.
-* Faculty Evaluations: Users can evaluate faculty members based on various criteria such as teaching, research, and service. These evaluations are used for performance reviews and promotions.
+* **Login/Registration:** Users can create an account and log in to the system.
+* **User Roles:** The application has different roles for users such as faculty, staff, and administrators.
+* **Department Management:** Users can manage various departments within the university, including creating new departments, modifying existing departments, and deleting departments.
+* **Course Management:** Users can create and manage courses within a department, including adding new courses, modifying existing courses, and deleting courses.
+* **Course Assignments:** Users can assign faculty members to specific courses and manage the assignments of courses to the faculty.
+* **Faculty Evaluations:** Users can evaluate faculty members based on various criteria such as teaching, research, and service. These evaluations are used for performance reviews and promotions.
 
 ## Installation:
 
