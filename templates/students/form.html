@@ -1,0 +1,27 @@
+{% extends "base/base.html" %}
+
+{% block title %}
+    Student Enrollment Form
+{% endblock %}
+
+{% block content %}
+
+    {% if form.errors %}
+        <div class="alert alert-danger">
+            <ul>
+                {% for field in form %}
+                    {% for error in field.errors %}
+                        <li>{{ error }}</li>
+                    {% endfor %}
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+
+    <form method="post" action="{% url 'student_enrollment' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Submit" class="btn btn-primary">
+    </form>
+
+{% endblock %}
