@@ -18,6 +18,7 @@ class User(models.Model):
     def __str__(self):
         return self.name
 
+
 class Course(models.Model):
     name = models.CharField(max_length=255, blank=False)
     code = models.CharField(max_length=255, blank=False)

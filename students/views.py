@@ -10,6 +10,7 @@ class StudentViewSet(ListView):
     template_name = "students/index.html"
     context_object_name = "students"
 
+
 # class StudentEnlistmentViewSet(TemplateView):
 #     template_name = "students/add_students.html"
 
@@ -23,12 +24,13 @@ def add_students(request):
         birthdate = request.POST.get("birthdate")
         gender = request.POST.get("gender")
 
-        new_student = User(name=name, address=address, nid=nid, phone=phone, birthdate=birthdate, gender=gender )
+        new_student = User(name=name, address=address, nid=nid, phone=phone, birthdate=birthdate, gender=gender)
         new_student.save()
 
-        print( name, address, nid,phone, birthdate,gender)
+        print(name, address, nid, phone, birthdate, gender)
 
     return render(request, "students/add_students.html")
+
 
 def add_courses(request):
     if request.method == "POST":
@@ -39,5 +41,5 @@ def add_courses(request):
         new_course = Course(name=name, code=code, description=description)
         new_course.save()
 
-        print( name, code, description)
+        print(name, code, description)
     return render(request, "students/add_courses.html")
